@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //import { CartService } from 'src/app/services/cart.service';
-//import { ProductListService } from 'src/app/services/product-list.service';private pls:ProductListService,
+import { ProductListService } from 'src/app/services/product-list.service';
 @Component({
   selector: 'app-abayaristam',
   templateUrl: './abayaristam.component.html',
@@ -8,22 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbayaristamComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pls:ProductListService) { }
 
   ngOnInit(): void {
   }
-  /*
+
   addToCart(product:string) {
     this.pls.addItem(product);
     window.alert('Your product has been added to the cart!');
 
     console.log(product);
-
-    //this.c.onDisplay();
-    //console.log("calling");
-   // console.log(JSON.stringify(this.pls.getservices(product)));
-
-  this.pls.getservices(product);
+    this.pls.getservices(product);
     }
-    */
+
 }

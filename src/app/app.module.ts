@@ -39,6 +39,15 @@ import { PistaComponent } from './dryfruits/pista/pista.component';
 import { RaisinsComponent } from './dryfruits/raisins/raisins.component';
 import { WalnutComponent } from './dryfruits/walnut/walnut.component';
 import { KalkaraichiComponent } from './ayurvedha/kalkaraichi/kalkaraichi.component';
+import { HerbalComponent } from './herbal/herbal.component';
+import { JathikaiComponent } from './herbal/jathikai/jathikai.component';
+import { GreenteaComponent } from './herbal/greentea/greentea.component';
+import { KabasuramComponent } from './herbal/kabasuram/kabasuram.component';
+import { KarpuravalliComponent } from './herbal/karpuravalli/karpuravalli.component';
+import { KuppaimeniComponent } from './herbal/kuppaimeni/kuppaimeni.component';
+import { NilavembuComponent } from './herbal/nilavembu/nilavembu.component';
+import { SakkaraiComponent } from './herbal/sakkarai/sakkarai.component';
+import { TriphalaComponent } from './herbal/triphala/triphala.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +87,16 @@ import { KalkaraichiComponent } from './ayurvedha/kalkaraichi/kalkaraichi.compon
     RaisinsComponent,
     WalnutComponent,
     KalkaraichiComponent,
-    AshokarishtaComponent
+    AshokarishtaComponent,
+    HerbalComponent,
+    JathikaiComponent,
+    GreenteaComponent,
+    KabasuramComponent,
+    KarpuravalliComponent,
+    KuppaimeniComponent,
+    NilavembuComponent,
+    SakkaraiComponent,
+    TriphalaComponent
   ],
   imports: [
     BrowserModule,

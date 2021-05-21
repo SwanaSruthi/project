@@ -1,1 +1,31 @@
+<!--
 <p>order works!</p>
+#authForm="ngForm" (ngSubmit)="OnSubmit(authForm)"
+-->
+<form style="margin-left: 50px;margin-bottom: 50px;margin-right: 50px;">
+  <h3 style="text-align: center;">!!! WELCOME CUSTOMER !!!</h3>
+  <h3 style="text-align: center;">FILL UP YOUR DETAILS HERE</h3>
+  <form >
+      <div class="form-group">
+        <label for="exampleFormControlInput1"><h6>Customer Name</h6></label>
+        <input type="text" class="form-control" ngModel name="cname" required minlength="6" />
+      </div>
+      <div class="form-group">
+          <label for="exampleFormControlInput1"><h6>Shop Name</h6></label>
+          <input type="text" class="form-control" id="exampleFormControlInput2" ngModel name="sname" required minlength="6"/>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1"><h6>Phone No</h6></label>
+          <input type="number" class="form-control" id="exampleFormControlInput3" ngModel name="phoneno"  required minlength="10"/>
+        </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1"><h6>Delivery Address</h6></label>
+        <textarea class="form-control" id="exampleFormControlTextarea4" rows="3" required minlength="15" ngModel name="address"></textarea>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-success "  (onClick)="placeOrder()">Confirm order</button>
+      </div>
+</form>
+</form>

@@ -34,6 +34,15 @@ import { CartComponent } from './cart/cart.component';
 import { OrderComponent } from './order/order.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdmindetailsComponent } from './admindetails/admindetails.component';
+import { HerbalComponent } from './herbal/herbal.component';
+import { JathikaiComponent } from './herbal/jathikai/jathikai.component';
+import { GreenteaComponent } from './herbal/greentea/greentea.component';
+import { KabasuramComponent } from './herbal/kabasuram/kabasuram.component';
+import { KarpuravalliComponent } from './herbal/karpuravalli/karpuravalli.component';
+import { KuppaimeniComponent } from './herbal/kuppaimeni/kuppaimeni.component';
+import { NilavembuComponent } from './herbal/nilavembu/nilavembu.component';
+import { SakkaraiComponent } from './herbal/sakkarai/sakkarai.component';
+import { TriphalaComponent } from './herbal/triphala/triphala.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -70,8 +79,16 @@ const routes: Routes = [
   {path:'order',component:OrderComponent},
   {path:'cart',component:CartComponent},
   {path:'admin',component:AdminComponent},
-  {path:'admindetails',component:AdmindetailsComponent}
-
+  {path:'admindetails',component:AdmindetailsComponent},
+  {path:'herbal',component:HerbalComponent},
+  {path:'herbal/greentea',component:GreenteaComponent},
+  {path:'herbal/jathikai',component:JathikaiComponent},
+  {path:'herbal/kabasuram',component:KabasuramComponent},
+  {path:'herbal/nilavembu',component:NilavembuComponent},
+  {path:'herbal/sakkarai',component:SakkaraiComponent},
+  {path:'herbal/triphala',component:TriphalaComponent},
+  {path:'herbal/karpuravalli',component:KarpuravalliComponent},
+  {path:'herbal/kuppaimeni',component:KuppaimeniComponent}
 ];
 
 @NgModule({

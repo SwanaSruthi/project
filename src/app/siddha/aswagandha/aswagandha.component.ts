@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ProductListService } from 'src/app/services/product-list.service';
 @Component({
   selector: 'app-aswagandha',
   templateUrl: './aswagandha.component.html',
@@ -7,20 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AswagandhaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pls:ProductListService) { }
 
   ngOnInit(): void {
   }
 
+  addToCart(product:string) {
+    this.pls.addItem(product);
+    window.alert('Your product has been added to the cart!');
+    console.log(product);
+    this.pls.getservices(product);
+  }
 }
-/*
-import { CartService } from 'src/app/services/cart.service';
-import { ProductListService } from 'src/app/services/product-list.service';
-private pls:ProductListService,private c:CartService
-addToCart(product:string) {
-  this.pls.addItem(product);
-  window.alert('Your product has been added to the cart!');
-  console.log(product);
-  this.pls.getservices(product);
-}
-*/
+
